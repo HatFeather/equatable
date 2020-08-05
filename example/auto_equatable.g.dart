@@ -4,10 +4,12 @@ part of 'auto_equatable.dart';
 /// is an alternative to manually typing all the fields
 /// of a class (and consequently forgetting to add some
 /// occasionally).
+/// 
+/// *The first name field is excluded because it was marked
+/// with [excludeEquals].
 List<Object> _$TrainTicketProps(TrainTicket obj) {
   return [
     obj.id,
-    obj.firstName,
     obj.lastName,
     obj._privateMember,
   ];

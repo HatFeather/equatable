@@ -23,7 +23,12 @@ class TrainTicket extends Equatable {
   }) : _privateMember = privateMember;
 
   final int id;
+
+  /// This field will be excluded from the generated equality props array
+  /// because it is marked with the [excludeEquals] annotation.
+  @excludeEquals
   final String firstName;
+
   final String lastName;
 
   /// This is a private field member, the generated code still has access to
